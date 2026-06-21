@@ -1,4 +1,4 @@
-Green Electricity Generation Analysis by State, 1990 - 2024
+# Green Electricity Generation Analysis by State, 1990 - 2024
 
 The purpose of this project is to investigate how green electricity generation has been adopted by the U.S. from the last 3 decades. The short answer is that the country's energy generation sources went from about 31% in 1990 to 41% in 2024, which doesn't seem like a lot, but this nationwide number hides variation that can only be seen at a more granular level. For instance, some states transformed their grids to clean energy almost completely while others have went 'backwards.'
 
@@ -13,9 +13,10 @@ Power BI was used for the interactive dashboard.
 
 The full analysis is in notebooks/analysis.ipynb
 
-Files
+## Files
 
-decarbonization-by-state/
+```
+green-energy-analysis-by-state/
 |
 ├── README.md
 |
@@ -31,11 +32,11 @@ decarbonization-by-state/
 └── dashboard/
     ├── decarbonization.pbix    the Power BI file
     └── screenshots/            dashboard images
+```
 
 The next step is to take CO2 emissions data and evaluate how emissions have varied alongside green energy generation adoption. As green energy generation increases for a state, we should expect lower CO2 emissions, hence an inverse proportional relationship.
 
-
-Part 2: Green Energy Generation vs. Carbon Emissions
+## Part 2: Green Energy Generation vs. Carbon Emissions
 
 The next step was to bring in CO2 emissions data and check whether greener grids actually emit less. Green energy share (e.g., percentage of total energy generated that is renewable) tells us how clean a state's generation mix is, but it doesn't directly tell us how much CO2 that state puts out. By merging EIA's emissions data to the generation data and calculating carbon intensity (CO2 emitted per MWh generated), we can do that. This puts every state on the same footing regardless of size, and it can be compared directly against green energy share.
 
